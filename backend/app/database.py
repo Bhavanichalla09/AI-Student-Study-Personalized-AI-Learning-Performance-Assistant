@@ -10,7 +10,10 @@ elif db_url.startswith("postgresql://") and not db_url.startswith("postgresql+as
     db_url = db_url.replace("postgresql://", "postgresql+asyncpg://", 1)
 
 # SQLite needs connect_args={"check_same_thread": False}
-connect_args = {"check_same_thread": False} if "sqlite" in db_url else {}
+# Supabase Transaction Pooler needs prepared_statement_cache_size=0
+connect_args = {"check_same_thread": False} if "sqlite" in db_url else {"server_settings": {"statement_timeout": "60000"}, "statement_cache_size": 0}
+if "asyncpg" in db_url:
+    connect_args["prepared_statement_cache_size"] = 0
 
 engine = create_async_engine(
     db_url,
