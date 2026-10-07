@@ -1,37 +1,108 @@
 # AI Student Study — Personalized AI Learning & Performance Assistant
 
-An AI-powered personalized learning assistant designed to help students understand concepts, identify knowledge gaps, practice effectively, and improve academic performance.
+An AI-powered personalized learning assistant designed to help students understand concepts, identify knowledge gaps, analyze mistakes, practice effectively, and track academic performance.
 
-## Features
+## 🎯 Project Goal
 
-- 📚 Personalized Study Assistance
-- 🧠 Knowledge Gap & Mastery Tracking
+The system provides a personalized learning experience based on a student's:
+
+- Concept mastery
+- Quiz performance
+- Mistakes
+- Confidence levels
+- Learning history
+- Knowledge gaps
+
+### Learning Cycle
+
+**Assess → Diagnose → Recommend → Teach → Practice → Measure → Adapt**
+
+---
+
+## ✨ Key Features
+
+- 📚 Personalized AI Study Assistance
+- 🧠 Knowledge Gap Detection
+- 🗺️ Knowledge Map
 - 🎯 Diagnostic Practice Quizzes
 - ❌ AI Mistake Analysis
 - 💡 Personalized Remediation Recommendations
 - 📝 Teach-Back Evaluation
-- 📊 Learning Progress & History
-- 🗺️ Knowledge Map
-- 🤖 Gemini AI Integration
+- 📊 Learning History
+- 📈 Performance Tracking
+- 🤖 Google Gemini AI Integration
 - 🗄️ Supabase PostgreSQL Database
-- 🔐 Secure backend API architecture
+- 🔐 Backend-based API architecture
+- 🧪 Automated Testing
 
-## Technology Stack
+---
 
-- Frontend: Next.js, TypeScript
-- Backend: Python, FastAPI
-- Database: Supabase PostgreSQL
-- AI: Google Gemini
-- Testing: Pytest
+## 🛠️ Technology Stack
 
-## Project Goal
+### Frontend
+- Next.js
+- TypeScript
+- React
+- Turbopack
 
-The system follows a continuous learning cycle:
+### Backend
+- Python
+- FastAPI
+- SQLAlchemy
+- AsyncIO
 
-**Assess → Diagnose → Recommend → Teach → Practice → Measure → Adapt**
+### Database
+- Supabase PostgreSQL
+- AsyncPG
 
-The goal is to provide students with a personalized learning experience based on their performance, mistakes, confidence, and concept mastery.
+### AI
+- Google Gemini API
 
-## Author
+### Testing
+- Pytest
 
-Bhavani Challa
+### Version Control
+- Git
+- GitHub
+
+---
+
+## 📂 Repository Structure
+
+```text
+AI-Student-Study-Personalized-AI-Learning-Performance-Assistant/
+│
+├── frontend/
+│   ├── src/
+│   │   ├── app/
+│   │   │   ├── quiz/
+│   │   │   ├── knowledge/
+│   │   │   ├── history/
+│   │   │   ├── curriculum/
+│   │   │   └── ...
+│   │   │
+│   │   ├── components/
+│   │   │   └── layout/
+│   │   │
+│   │   └── ...
+│   │
+│   ├── package.json
+│   ├── next.config.ts
+│   └── ...
+│
+├── backend/
+│   ├── app/
+│   │   ├── api/
+│   │   ├── models/
+│   │   ├── services/
+│   │   └── ...
+│   │
+│   ├── tests/
+│   │   └── conftest.py
+│   │
+│   ├── requirements.txt
+│   └── ...
+│
+├── .gitignore
+├── README.md
+└── ...
